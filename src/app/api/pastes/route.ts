@@ -63,7 +63,7 @@ export async function POST(request: Request) {
     }
 
     if (expiresAt) {
-      pasteData.expires_at = 0;
+      pasteData.expires_at = expiresAt;
     }
 
     const key = `paste:${id}`;
